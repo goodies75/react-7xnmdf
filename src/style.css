@@ -1,0 +1,49 @@
+h1,
+p {
+  font-family: Lato;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  height: 2400px;
+}
+
+.navbar {
+  text-align: center;
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: tomato;
+}
+
+.move-up {
+  animation: moveUp 0.5s forwards;
+}
+.move-down {
+  animation: moveDown 0.5s forwards;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
+@keyframes moveUp {
+  from {
+    transform: translateY(0rem);
+  }
+  to {
+    transform: translateY(-5rem);
+  }
+}
+
+.abs {
+  padding-top: 300px;
+}
